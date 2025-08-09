@@ -30,7 +30,7 @@ public class Journal
         Console.Write("Your response: ");
         string response = Console.ReadLine();
 
-        string date = DateTime.Now.ToShortDateString();
+        string date = DateTime.Now.ToString("MM/dd/yyyy HH:mm");
         Entry newEntry = new Entry(date, prompt, response);
         entries.Add(newEntry);
     }
